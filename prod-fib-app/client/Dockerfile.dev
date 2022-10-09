@@ -5,4 +5,5 @@ RUN yarn install
 COPY . .
 # RUN chmod a+x app/node_modules/.bin/react-scripts
 RUN chmod +x ./node_modules/.bin/react-scripts
+RUN yarn add react-scripts --force
 CMD ["yarn", "start"]
